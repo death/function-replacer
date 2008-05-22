@@ -1,0 +1,99 @@
+                               Function Replacer
+                                  Version 1.0
+                             by DEATH of Execution
+                                      2000
+컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴컴
+
+Contents
+---------
+1.      - Overview
+2.      - Disclaimer
+3.      - What to do?
+4.      - Technical notes
+5.      - Contacting the author
+6.      - The future of Function Replacer
+7.      - History of Function Replacer
+8.      - Greetings and Thank you's
+
+
+1. Overview
+------------
+From the logs:
+
+<wolf1> can ya help me more with that dll editing :)
+<AB4DS> what's the problem
+<wolf1> k well the replacing worked of course
+<wolf1> but im having trouble finding the area in dll of the actual
+        function.. maybe there is some easier way to do it
+<wolf1> like specify only that function i need from different dll
+...
+<wolf1> wish there was some editor to let u do it
+<AB4DS> I have an idea
+<AB4DS> ;)
+<wolf1> killer
+<AB4DS> I could code something that would replace ANY function in a DLL..
+
+Well, here it is :)
+This programme will replace any export from a DLL with another DLL's export,
+it performs an automatic loading of the DLL + getting the function's
+address, then calling it. Could be useful sometimes.
+
+
+2. Disclaimer
+--------------
+I'm not responsible for anything ;)
+
+
+3. What to do?
+---------------
+Well, it's pretty easy to understand the programme. You should understand
+it yourself :). (lazy!)
+
+Few things to remember:
+
+    - This tool wasn't properly tested, backup your DLLs.
+    - The tool modifies EAX just before it calls the new function.
+    - You cannot use the same API in the new function (unless you want a
+      recursive function ;)
+    - The old function won't run.
+    - You must have the same number of parameters in the NEW function as
+      well as the old one.
+    - The function must be bigger than the loading code/data.. The size
+      of this may vary, but most functions will do (100 bytes is enough).
+
+
+4. Technical notes
+-------------------
+Well I coded this tool in two days.. One day for the main engine, the
+other day for the GUI. The tool was coded in C. Some stuff were recycled
+from VBRef.
+
+
+5. Contacting the author
+-------------------------
+The author is DEATH of Execution group (a coding group). You may contact me
+if you have suggesstions, bug reports, or any other thing that might
+interest me. Contact me via:
+
+    Email: ab4ds@hotmail.com
+    Web: Soon avail.
+    IRC: EFnet's #cracking4newbies, #execution my nickname is AB4DS.
+
+
+6. The future of VBRef
+-----------------------
+    -   Well, bugs?
+
+
+7. History of VBRef
+--------------------
+1.0       - Initial release
+
+
+8. Greetings and Thank you's
+-----------------------------
+I greet everyone :)
+Thanks to wolf1 for the making me think of this tool.
+
+                                                        C'ya, DEATH
+

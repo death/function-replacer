@@ -1,0 +1,166 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 303, 199
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Function Replacer"
+FONT 8, "Verdana"
+BEGIN
+    EDITTEXT        IDC_2PDLL,76,16,159,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_REP,76,49,159,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Browse...",IDC_BR2BPDLL,242,16,54,12
+    PUSHBUTTON      "Browse...",IDC_BRREPDLL,242,49,54,12
+    PUSHBUTTON      "Select",IDC_GETREPF,242,64,54,12
+    PUSHBUTTON      "Select",IDC_GET2RF,242,31,54,12
+    LISTBOX         IDC_STATUS,7,136,289,56,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "To-Be-Patched DLL:",IDC_STATIC,7,17,66,8
+    LTEXT           "Function to replace",IDC_F2REP,7,32,231,9
+    LTEXT           "Replace with",IDC_REPFUNC,7,66,231,9
+    PUSHBUTTON      "Replace function",IDC_REPLACE,7,86,289,11
+    RTEXT           "Replacer DLL:",IDC_STATIC,7,52,66,8
+    PUSHBUTTON      "Exit",IDC_EXIT,7,99,289,11
+    DEFPUSHBUTTON   "About",IDC_ABOUT,7,112,289,11
+END
+
+IDD_SELECT DIALOG DISCARDABLE  0, 0, 195, 191
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Select"
+FONT 8, "Verdana"
+BEGIN
+    LISTBOX         IDC_LIST,7,7,181,159,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,7,171,56,13
+    PUSHBUTTON      "Cancel",IDCANCEL,132,171,56,13
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 303, 193
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Function Replacer"
+FONT 8, "Verdana"
+BEGIN
+    CONTROL         105,IDC_STATIC,"Static",SS_BITMAP | SS_SUNKEN,7,7,289,
+                    143
+    CTEXT           "Function Replacer version 1.0 by DEATH of Execution in 2000",
+                    IDC_STATIC,7,155,289,11,SS_CENTERIMAGE | SS_SUNKEN
+    DEFPUSHBUTTON   "OK",IDOK,7,171,289,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON    DISCARDABLE     "exec.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_ABOUT               BITMAP  DISCARDABLE     "exec.bmp"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
